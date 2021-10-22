@@ -1,0 +1,54 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": 1,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "paths": {
+    "ROOT": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp",
+    "SRC": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\src",
+    "DIST": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\dist",
+    "ASSETS": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\dist",
+    "PLUGINS": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\plugins",
+    "TEMP": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\tmp",
+    "ARTIFACTS": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\artifacts",
+    "PUBLIC": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\public",
+    "NODE_MODULES": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\node_modules",
+    "PACKAGE": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp\\dist\\staticData"
+  },
+  "plugins": [
+    "C:\\Users\\dmenn\\Desktop\\M. Sc. Geoinformatik\\2. Semester\\Studienprojekt\\lake clear\\webapp"
+  ],
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

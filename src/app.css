@@ -1,0 +1,88 @@
+#root, .App, #map {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#sliderContainer {
+  width: 60%;
+  height: 120px;
+  position: absolute;
+  z-index: 100;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 4px;
+
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+}
+
+#buttonsContainer {
+  position: absolute;
+  z-index: 100;
+  top: 2%;
+  right: 4%;
+}
+
+.buttonTop {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  margin: .25em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: whitesmoke;
+}
+
+.buttonTop:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#pickContainer {
+  position: relative;
+  top: 50%;
+  margin-left: .4em;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 90%;
+  border-radius: 4px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0.2em;
+}
+
+.buttonPick {
+  border: 0.5px solid black;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.buttonPick:hover {
+  cursor: pointer;
+}
+
+#slider {
+  position: relative;
+}
+
+#sliderInput {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+
+
+
+
