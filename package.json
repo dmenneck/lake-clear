@@ -11,8 +11,10 @@
   "dependencies": {
     "@terrestris/react-geo": "^11.4.5",
     "antd": "^4.16.3",
+    "chart.js": "^3.5.1",
     "ol": "^6.5.0",
     "react": "^16.14.0",
+    "react-chartjs-2": "^3.2.0",
     "react-dom": "^16.14.0",
     "react-hot-loader": "^4.13.0",
     "react-static": "^7.5.1",

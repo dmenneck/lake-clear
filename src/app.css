@@ -5,29 +5,6 @@
   width: 100%;
 }
 
-#sliderContainer {
-  width: 60%;
-  height: 120px;
-  position: absolute;
-  z-index: 100;
-  bottom: 100px;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 4px;
-
-  display: grid;
-  grid-template-columns: 0.25fr 0.75fr;
-}
-
-#buttonsContainer {
-  position: absolute;
-  z-index: 100;
-  top: 2%;
-  right: 4%;
-}
-
 .buttonTop {
   width: 60px;
   height: 60px;
@@ -35,12 +12,28 @@
   border: none;
   margin: .25em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
 }
 
-.buttonTop:hover {
+#buttonsContainer {
+  position: absolute;
+  z-index: 100;
+  top: 2%;
+}
+
+#buttonsContainer button {
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin: 0 .2em;
+  background-color: white;
+}
+
+#buttonsContainer button:hover {
   cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: rgb(246, 244, 244);
 }
 
 #pickContainer {
@@ -57,32 +50,162 @@
   grid-gap: 0.2em;
 }
 
-.buttonPick {
-  border: 0.5px solid black;
-  border-radius: 4px;
-  width: 100%;
+#drawerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 2em;
 }
 
-.buttonPick:hover {
+.drawerButton {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  object-fit: cover;
+}
+
+.drawerButton:hover {
   cursor: pointer;
 }
 
-#slider {
-  position: relative;
+.drawerButtonText {
+  text-align: center;
+  margin-top: .2em;
+  font-size: 1em;
 }
 
-#sliderInput {
-  width: 80%;
-  margin: auto;
+.drawerButton-chla {
+  background-image: "./static/images/chla.webp";
+}
+
+#parameterExplanation {
+  border-top: 1px solid rgb(201, 197, 197);
+  border-bottom: 1px solid rgb(201, 197, 197);
+  padding: 2em .4em;
+  margin: 2em 0;
+}
+
+#legende-container {
+  z-index: 100;
   position: absolute;
-  left:0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  top: 2%;
+  left: 1%;
+  background: white;
+  width: 140px;
+  border-radius: 4px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  padding: .5em;
 }
 
+#legende-chla-grid {
+  display: grid;
+  grid-gap: 0.2em;
+  grid-template-columns: 1fr 1fr;
+}
 
+.legende-p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
 
+.bottom-margin {
+  margin-bottom: 0.6em;
+}
+
+.legende-text {
+  text-align: center;
+}
+
+#multiLayerSlider {
+  position: absolute !important;
+  top: 200px;
+  left: 200px;
+  z-index: 100;
+  padding: .8em !important;
+}
+
+#slider {
+  opacity: 0;
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+  background-color: white;
+  padding: 0 1.4em;
+  border-radius: 4px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+
+.parameter__eq {
+  text-align: center;
+  font-weight: 700;
+}
+
+.ol-zoom {
+  display: none !important;
+}
+
+#closeDrawer {
+  display: inline;
+  padding: 0.2em 0.5em;
+  float: right;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#closeDrawer:hover {
+  cursor: pointer;
+  background-color: rgb(246, 244, 244);
+}
+
+#statistics__container {
+  width: 200px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: calc(50px + 3%);
+  z-index: 100;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: .2em;
+}
+
+.statistics-options {
+  padding: .4em 0.6em;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.statistics-options:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.statistics-title {
+  padding: .2em 0.6em;
+  margin: 0;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  #slider {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  #slider {
+    width: 98%;
+  }
+}
 
 
 
